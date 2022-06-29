@@ -86,3 +86,56 @@ pip install pip_search
 touch requeremets.txt (with packages)
 
 pip install -r requeremets.txt
+
+##########################
+#### Python Functions ####
+##########################
+
+def devnet():
+    '''prints simple function'''
+    print('Simple Function')
+    
+
+>>> def sub(arg1, arg2):
+...     result = arg1 - arg2
+...     return result
+...  
+>>> sub(50,25)
+25
+
+
+>>> def hello(*args):
+...     for x in args:
+...         print ("Hello", x, "!")
+... 
+>>> hello ('Andrey', 'Loren', 'Alex')
+Hello Andrey !
+Hello Loren !
+Hello Alex !
+>>> 
+
+##########################
+#### Python Classes   ####
+##########################
+
+>>> class Router:
+...     '''Router Class'''
+...     def __init__ (self, model,swversion, ip_addr):
+...          '''initiate values'''
+...          self.model = model
+...          self.swversion = swversion
+...          self.ip_addr = ip_addr
+... 
+>>> rtr1 = Router('iosV','15.6.7','10.10.10.1')
+>>> rtr1.model
+'iosV'
+>>> rtr1.ip_addr
+'10.10.10.1'
+>>> rtr1.swversion
+'15.6.7'
+>>> 
+
+
+
+
+
